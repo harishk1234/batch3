@@ -1,20 +1,15 @@
-pipeline{
-agent any
-stages{
-
-stage ('git pull'){
-steps{
-
-            git 'https://github.com/harishk1234/batch3.git'
+pipeline {
+  agent any
+  stages {
+    stage('HelloWorld') {
+      steps {
+        echo 'Hello World'
+      }
     }
-        
-        }
-      
-      stage ('compile'){
-steps{
-
-           echo "compile stage"
+    stage('git clone') {
+      steps {
+        echo "End"
+      }
     }
-        
-        }
-}}
+  }
+}
