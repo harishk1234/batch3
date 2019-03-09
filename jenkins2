@@ -13,8 +13,9 @@ node{
                 echo "This is my test stage."
             }
         }
-    } stage('Deploy'){
+    stage('Deploy'){
             steps{
                 echo "This is my deploy stage."
             }
+        }
         }
