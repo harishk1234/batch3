@@ -1,0 +1,20 @@
+node{
+    stages
+        stage ('git pull'){
+            git 'https://github.com/harishk1234/batch3.git'
+    }
+        stage('compile'){
+            steps{
+                echo "This is my compile stage."
+            }
+        }
+        stage('test'){
+            steps{
+                echo "This is my test stage."
+            }
+        }
+    } stage('Deploy'){
+            steps{
+                echo "This is my deploy stage."
+            }
+        }
